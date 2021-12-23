@@ -121,48 +121,31 @@ This dataframe shows so much information about different countries.
 
 ---
 
-## Mapping
-Plotly produces interactive graphs, can be embedded on websites, and provides a wide variety of complex plotting options. The visuals are of high quality and easy to read and interpret.
-### 1.
-In this first exercise, we are going to analyze a dataframe with records for bills and tips in a restaurant for several days and types of clients.
+## Mapping (Choropleth)
+Choropleth Maps display divided geographical areas or regions that are coloured, shaded or patterned in relation to a data variable. This provides a way to visualise values over a geographical area, which can show variation or patterns across the displayed location.
 
-- Plot a boxplot comparing tips distribution for category smoker.
-- Plot a scatter plot with the total bill in the x-axis and the tip in the y-axis.
-- Plot a bar chart with the total bills (y-axis) per day (x-axis). Use a trace per sex.
+To build a choropleth map, there are 2 mandatory files:
+- A dataset with the information you want to display
+- A GeoJSON file with the delimitation of the areas to plot
+
+Geographic JSON (or GeoJSON) is an open format for encoding simple geospatial datasets using the JSON (JavaScript Object Notation) standard. It is used to describe data such as points, lines, strings, polygons, as well as sets and subsets of these data types, and to add non-spatial information attributes.
+
+---
+
+### 1.
+The dataset consists of a GeoJSON object, containing the polygons defining the shape of each district. There is also a dataset contaning the elections results for each district of Montreal.
 
 <p align="center">
-  <image src="https://github.com/wanaguirre/data_visualization/blob/main/Notebooks/images/restaurant.png"/>
+  <image src="https://github.com/wanaguirre/data_visualization/blob/main/Notebooks/images/montreal_elect.png"/>
 </p>
 
 ---
 
 ### 2.
-Analyze a dataframe of records of different species of flowers with records for different characteristics.
-
-- Plot a scatter plot grouping by the specie of flowers.
+This dataset gives us information about the unemployment rate of the whole USA.
 
 <p align="center">
-  <image src="https://github.com/wanaguirre/data_visualization/blob/main/Notebooks/images/iris.png"/>
+  <image src="https://github.com/wanaguirre/data_visualization/blob/main/Notebooks/images/usa_unemployment.png"/>
 </p>
 
 ---
-
-### 3.
-Using a dataframe used before, the cars one, we are going to analyze the cars from the 70's and 80's, to realize the relation of each of them between the weight and the miles per gallon.
-
-<p align="center">
-  <image src="https://github.com/wanaguirre/data_visualization/blob/main/Notebooks/images/miles_weight.png"/>
-</p>
-
----
-
-### 4. Plotly Express or PX
-This dataframe shows so much information about different countries.
-
-- Plot the relationship between the gross domestic product (GDP) and the life expectancy per country per year, and also grouping by continent.
-
-<p align="center">
-  <image src="https://github.com/wanaguirre/data_visualization/blob/main/Notebooks/images/life_exp.png"/>
-</p>
-
-
